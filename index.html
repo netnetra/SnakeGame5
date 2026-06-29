@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css?v=2" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <h1>Snake Game</h1>
+        <p class="subtitle">Eat the apple and grow longer without hitting the wall or your tail.</p>
+
+        <div class="controls">
+          <button id="startButton" type="button">go/play again</button>
+          <div class="scoreboard">
+            <span>Score: <strong id="score">0</strong></span>
+            <span>High Score: <strong id="high-score">0</strong></span>
+            <span>Status: <strong id="status">Ready</strong></span>
+          </div>
+        </div>
+
+        <p class="hint">Use the arrow keys or WASD to move.</p>
+        <div id="board" class="board" aria-label="Snake game board"></div>
+      </section>
+    </main>
+
+    <script src="script.js?v=2"></script>
+  </body>
+</html>
